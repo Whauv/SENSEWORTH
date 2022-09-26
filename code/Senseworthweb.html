@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="imagessss.css">
+        <link rel="stylesheet" href="page2.css">
+
+<style>
+
+ /*nav bar starting block*/   
+.shape {
+    width:auto;
+    margin:0 auto;
+    text-align: left;
+}
+.top {
+    height:0;
+    border-width:100px 0 200px 600px;
+    border-style:solid;
+    border-color:transparent transparent;
+    filter:chroma(color=#123456);
+    border-top-color:#003050;
+    border-left-color: #73777B;
+    background-image: url("twitter-logo7.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100px;
+    
+}     
+.Senseworthblock{
+            height: 60px;
+            background-color: black;
+            text-align: left;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            color: white ;
+            letter-spacing: 7px;
+            padding-left: 0.5em;
+            padding-top: 0.2em;
+            
+        }   
+
+
+.sliderblock{
+  height: 600px;
+  background-color: #003050;
+  width: 54%;
+  padding: 2em;
+  box-shadow: inset 0 0 20px 0;
+  
+  
+}     
+
+
+</style>
+
+    </head>
+
+    <body>
+
+        <div class="Senseworthblock">SENSEWORTH</div>
+<!--SWblock Start-->        
+        <section id="SWblock">
+        <div class="shape">
+            <div class="top">
+
+              
+              
+              </div>
+              
+            </div>
+        </div>
+        </section>
+
+
+<section id="imgslider">  
+
+<div class="sliderblock">
+  
+
+<!--image slider start-->
+<div class="slider">
+    <div class="slides">
+      <!--radio buttons start-->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <!--radio buttons end-->
+      <!--slide images start-->
+      <div class="slide first">
+        <img src="IMG_0275.GIF" alt="">
+      </div>
+      <div class="slide">
+        <img src="sw2.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="sw1.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="sw4.jpg" alt="">
+      </div>
+      <!--slide images end-->
+      <!--automatic navigation start-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+      <!--automatic navigation end-->
+    </div>
+    <!--manual navigation start-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+    <!--manual navigation end-->
+  </div>
+  <!--image slider end-->
+
+  <script type="text/javascript">
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+      counter = 1;
+    }
+  }, 5000);
+
+ 
+  </script>
+  </div>
+  
+</section>
+<!--search bar-->
+<section id="searchbar">
+  <div id="cover">
+    <form method="get" action="">
+      <div class="tb">
+        <div class="td"><input type="text" placeholder="Search" required></div>
+        <div class="td" id="s-cover">
+          <button type="submit">
+            <div id="s-circle"></div>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  </section>
+
+<!--domain blocks-->
+
+<section id="domblocks"
+   style="background-color: #181717;
+          padding-left: 60px;
+        ">
+  <div class="container">
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>01</h2>
+          <h3>HEALTH</h3>
+          <p>Health Tweets</p>
+          <a href="#">Search</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>02</h2>
+          <h3>SPORTS</h3>
+          <p>Sports Tweets</p>
+          <a href="#">Search</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+        <div class="box">
+          <div class="content">
+            <h2>03</h2>
+            <h3>FINANCE</h3>
+            <p>Finance Tweets</p>
+            <a href="#">Search</a>
+          </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="box">
+          <div class="content">
+            <h2>04</h2>
+            <h3>POLITICS</h3>
+            <p>Politics Tweets</p>
+            <a href="#">Search</a>
+          </div>
+        </div>
+    </div>
+    
+</div>
+</section>           
+<!--domBlock end-->
+
+<!--Parallax 2 Start-->
+<section id="Parallax2">
+  <style>
+    .parallax {
+      background-image: url("img_0276.gif");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    </style>
+
+    <div class="parallax"></div>
+    <div style="height:500px;
+                background-color:#003050;
+                font-size:36px">
+
+    Senseworth
+    </div>
+</section>
+   
+    </body>
+</html>
