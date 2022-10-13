@@ -12,3 +12,5 @@ Now-a-days,the use of social media apps has increased from the passed few years.
 SENSEWORTH will be an web application that would be used to classify the tweets and give an accuracy that would derive to how much extent a particular tweet is ture along with the true-flase classification.
 
 
+
+
